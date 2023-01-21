@@ -1,0 +1,137 @@
+body {
+  font-family: "Karla";
+  color: #373d46;
+  text-align: center;
+}
+
+/* Global */
+ul {
+  list-style: none;
+}
+
+/*  cambiar el color del puntero. fuente: https://www.w3schools.com/howto/howto_css_bullet_color.asp */
+ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #00a6ff; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+/* Header Section */
+#header {
+  background-color: #00a6ff;
+  padding-bottom: 5.5rem;
+}
+
+.nav-item {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 12px;
+}
+
+.navbar-brand {
+  font-family: "Domine";
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-left: 6rem;
+  margin-top: 1.4rem;
+  font-weight: 700;
+}
+
+.navbar-brand:focus {
+  color: #fff;
+}
+
+.navbar-nav {
+  margin-right: 1rem;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.container-image {
+  position: relative;
+  top: 80px;
+}
+
+/* Headings */
+.serif-heading {
+  font-size: 15.3px;
+  font-family: "Domine";
+  letter-spacing: 5px;
+}
+
+.main-serif-heading {
+  font-size: 40px;
+  font-family: "Domine";
+  letter-spacing: 2px;
+}
+
+.sans-serif-heading {
+  font-size: 53px;
+}
+
+/* Main Section */
+#main {
+  padding: 18rem 0px;
+}
+
+.icon-button {
+  font-size: 25px;
+  padding: 14px 20px;
+  color: #00a6ff;
+}
+
+.sobre-mi-list {
+  display: inline-block;
+  font-size: 26.5px;
+}
+
+.list-item {
+  font-size: 1.5rem;
+}
+
+#warning-text {
+  font-size: 1.4rem;
+}
+
+.interaction-buttons {
+  all: unset;
+  cursor: pointer;
+}
+
+/* Footer Section */
+.icon-footer {
+  padding: 0 10px 10px;
+}
+
+#socials {
+  padding-top: 20rem;
+}
+
+/* Media Query */
+@media only screen and (max-width: 991px) {
+  /* Header Section */
+  .navbar-brand {
+    margin: auto;
+    font-size: 36px;
+  }
+  .navbar-toggler {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  .navbar-nav {
+    margin: auto;
+    margin-right: 0rem;
+  }
+}
